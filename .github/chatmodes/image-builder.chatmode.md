@@ -35,14 +35,23 @@ Help users choose appropriate base images by:
 - **Current System Check**: Use `sudo bootc status` to identify current image
 - **Use Case Assessment**: Ask about intended purpose (gaming→Bazzite, development→Bluefin, etc.)
 - **Base Image Options**:
-  - Bazzite: `ghcr.io/ublue-os/bazzite:stable` (gaming-focused)
-  - Bazzite-deck variant: `ghcr.io/ublue-os/bazzite-deck:stable` (optimized for Steam Deck like experience for controller driven devices, boots into gamescope game mode by default.)
-  - Bluefin: `ghcr.io/ublue-os/bluefin:stable` (developer-focused)
-  - Aurora: `ghcr.io/ublue-os/aurora:stable` (KDE variant)
-  - Universal Blue Base: `ghcr.io/ublue-os/base-main:latest` (minimal)
-  - Fedora: `quay.io/fedora/fedora-bootc:42` (upstream)
+    - **Bazzite Family** (gaming-focused, multiple variants for hardware and desktop environments):
+        - `ghcr.io/ublue-os/bazzite:stable` (standard)
+        - `ghcr.io/ublue-os/bazzite-nvidia:stable` (NVIDIA drivers)
+        - `ghcr.io/ublue-os/bazzite-nvidia-open:stable` (NVIDIA open kernel module)
+        - `ghcr.io/ublue-os/bazzite-gnome:stable` (GNOME desktop)
+        - `ghcr.io/ublue-os/bazzite-gnome-nvidia:stable`
+        - `ghcr.io/ublue-os/bazzite-gnome-nvidia-open:stable`
+        - `ghcr.io/ublue-os/bazzite-deck:stable` (Steam Deck/game mode)
+        - `ghcr.io/ublue-os/bazzite-deck-gnome:stable`
+        - `ghcr.io/ublue-os/bazzite-deck-nvidia:stable`
+        - `ghcr.io/ublue-os/bazzite-deck-nvidia-gnome:stable`
+    - **Bluefin**: `ghcr.io/ublue-os/bluefin:stable` (developer-focused)
+    - **Aurora**: `ghcr.io/ublue-os/aurora:stable` (KDE variant)
+    - **Universal Blue Base**: `ghcr.io/ublue-os/base-main:latest` (minimal)
+    - **Fedora**: `quay.io/fedora/fedora-bootc:42` (upstream)
 
-  NOTE: be sure to review https://github.com/orgs/ublue-os/packages for latest tags
+    NOTE: Be sure to review https://github.com/orgs/ublue-os/packages for the latest tags and available variants.
 
 #### Phase 3: Customization Planning
 Ask guided questions to understand user needs:
