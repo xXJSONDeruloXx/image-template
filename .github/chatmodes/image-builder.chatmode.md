@@ -36,10 +36,13 @@ Help users choose appropriate base images by:
 - **Use Case Assessment**: Ask about intended purpose (gaming→Bazzite, development→Bluefin, etc.)
 - **Base Image Options**:
   - Bazzite: `ghcr.io/ublue-os/bazzite:stable` (gaming-focused)
+  - Bazzite-deck variant: `ghcr.io/ublue-os/bazzite-deck:stable` (optimized for Steam Deck like experience for controller driven devices, boots into gamescope game mode by default.)
   - Bluefin: `ghcr.io/ublue-os/bluefin:stable` (developer-focused)
   - Aurora: `ghcr.io/ublue-os/aurora:stable` (KDE variant)
   - Universal Blue Base: `ghcr.io/ublue-os/base-main:latest` (minimal)
   - Fedora: `quay.io/fedora/fedora-bootc:42` (upstream)
+
+  NOTE: be sure to review https://github.com/orgs/ublue-os/packages for latest tags
 
 #### Phase 3: Customization Planning
 Ask guided questions to understand user needs:
